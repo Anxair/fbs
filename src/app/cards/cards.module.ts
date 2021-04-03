@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CardsComponent } from './cards.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {CardsComponent} from './cards.component';
+import {CardsRoutingModule} from './cards-routing.module';
 
 
 @NgModule({
@@ -9,7 +9,10 @@ import { CardsComponent } from './cards.component';
     CardsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
+    CardsRoutingModule
   ]
 })
-export class CardsModule { }
+export class CardsModule {
+}

@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { BalanceComponent } from './balance.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {BalanceComponent} from './balance.component';
+import {BalanceRoutingModule} from './balance-routing.module';
 
 
 @NgModule({
@@ -9,7 +9,10 @@ import { BalanceComponent } from './balance.component';
     BalanceComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
+    BalanceRoutingModule
   ]
 })
-export class BalanceModule { }
+export class BalanceModule {
+}

@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SupportComponent } from './support.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {SupportComponent} from './support.component';
+import {SupportRoutingModule} from './support-routing.module';
 
 
 @NgModule({
@@ -9,7 +9,10 @@ import { SupportComponent } from './support.component';
     SupportComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
+    SupportRoutingModule
   ]
 })
-export class SupportModule { }
+export class SupportModule {
+}

@@ -1,1 +1,12 @@
-<p>navigation-panel works!</p>
+<div class="d-flex full-size">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical" (activeIdChange)="changePage()" >
+    <ng-container *ngFor="let item of navigation">
+      <li ngbNavItem="{{item.id}}">
+        <a ngbNavLink>{{item.name}}</a>
+        <ng-template ngbNavContent>
+        </ng-template>
+      </li>
+    </ng-container>
+  </ul>
+  <div [ngbNavOutlet]="nav" class="ml-4"></div>
+</div>

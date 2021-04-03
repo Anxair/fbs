@@ -1,0 +1,8 @@
+@import './src/styles/variables';
+
+.custom-btn {
+  border-radius: 5px;
+  border-color: $orange-main;
+  background-color: $gray-main;
+  color: $white;
+}

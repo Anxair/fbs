@@ -1,0 +1,24 @@
+@import "src/styles/variables";
+
+.full-size {
+  height: 100%;
+}
+
+.nav-pills .nav-link.active {
+  background-color: $orange-main;
+  color: $black;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-pills {
+  padding-top: 5px;
+  background-color: $gray-light;
+  width: 130px;
+
+  & a {
+    color: $black;
+  }
+
+}

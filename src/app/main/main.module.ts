@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MainComponent } from './main.component';
-import { HeaderComponent } from './header/header.component';
-import { NavigationPanelComponent } from './navigation-panel/navigation-panel.component';
-import {RouterModule} from '@angular/router';
-import { UserMenuComponent } from './user-menu/user-menu.component';
+import {MainComponent} from './main.component';
+import {HeaderComponent} from './header/header.component';
+import {NavigationPanelComponent} from './navigation-panel/navigation-panel.component';
 
+import {UserMenuComponent} from './user-menu/user-menu.component';
+import {NgbDropdownModule, NgbNavModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -20,7 +21,10 @@ import { UserMenuComponent } from './user-menu/user-menu.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    NgbDropdownModule,
+    NgbNavModule
   ]
 })
-export class MainModule { }
+export class MainModule {
+}

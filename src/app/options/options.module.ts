@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { OptionsComponent } from './options.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {OptionsComponent} from './options.component';
+import {OptionsRoutingModule} from './options-routing.module';
 
 
 @NgModule({
@@ -9,7 +9,10 @@ import { OptionsComponent } from './options.component';
     OptionsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
+    OptionsRoutingModule
   ]
 })
-export class OptionsModule { }
+export class OptionsModule {
+}
