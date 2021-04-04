@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {DataService} from '../../data.service';
 
 @Component({
   selector: 'app-user-menu',
@@ -7,10 +8,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class UserMenuComponent implements OnInit {
 
-  constructor() {
+  constructor(private dataService: DataService) {
   }
 
   ngOnInit(): void {
   }
 
+  chooseUser(id: string): void {
+    this.dataService.switchUser(id);
+  }
 }
