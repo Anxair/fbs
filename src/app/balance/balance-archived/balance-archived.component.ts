@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {User} from '../../dtos/user';
 import {DataService} from '../../data.service';
 
@@ -9,7 +9,7 @@ import {DataService} from '../../data.service';
 })
 export class BalanceArchivedComponent implements OnInit {
 
-  user: User;
+ @Input() user!: User;
 
   constructor(private dataService: DataService) {
   }
